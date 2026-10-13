@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run LLaMA Rotation + Commonsense Eval",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/home/renjunzhang/code1/Final/QuaRot-main-KL/fake_quant/main.py",
+      "args": [
+        "--model", "meta-llama/Llama-2-7b-hf",
+        "--rotate",
+        "--a_bits", "4",
+        "--v_bits", "16",
+        "--k_bits", "16",
+        "--w_bits", "4",
+        "--w_clip"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+      }
+    ]
+  }
+  
